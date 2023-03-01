@@ -1,0 +1,26 @@
+package be.technifutur.logiqueToJava;
+
+import java.util.Scanner;
+
+public class Modele implements Runnable {
+
+    public void run() {
+
+        Scanner scan = new Scanner(System.in);                       ///
+        System.out.println("Combien de valeurs voulez-vous ?");     /// Scanner un nombre
+        String input = scan.nextLine();                             // Saisir input             ///
+        choix = Integer.parseInt(input);
+
+
+        System.out.println("Veuillez saisir un mot :");          // scan texte
+        String texte = scan.nextLine();
+        System.out.println("Vous avez saisi : " + texte);
+
+         System.out.println("\n\n\n");              // passage de ligne à l'affichage
+
+
+
+          System.out.println("\n\n\n");
+
+    }
+}
