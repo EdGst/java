@@ -9,8 +9,8 @@ import be.technifutur.sudoku.sudokuSamurai.SudokuVueSamurai;
 
 public class Main {
     public static void main(String[] args) {
-        ModelFactorySamurai partie = new ModelFactorySamurai();
 
+        ModelFactorySamurai partie = new ModelFactorySamurai();
 
         SudokuModelSamurai modele = partie.getModel("fichierSudoku\\samurai.txt");
 

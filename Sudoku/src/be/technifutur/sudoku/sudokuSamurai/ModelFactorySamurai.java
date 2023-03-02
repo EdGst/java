@@ -22,9 +22,10 @@ public class ModelFactorySamurai implements ModelFactory {
 
                 while (col < 21) {
                     char value = line.charAt(col);
-                    if (value != '.') {
-
+                    if (value != '.' && value != ' ') {
                         model.setValue(ligne, col, value);
+                    } else if (value == ' ') {
+                        model.setValue(ligne, col, ' ');
                     }
                     col++;
                 }
